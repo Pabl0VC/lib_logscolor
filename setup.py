@@ -9,7 +9,7 @@ setup(
     ],
     author="Pablo Vega C",
     author_email="pablovegac.93@gmail.com",
-    description="Librería personalizada para logging con colores, con informacion de fecha - hora de ejecución y linea ejecutable (opcional)",
+    description="Custom library for logging with colors, including execution date-time information and executable line (optional). Librería personalizada para logging con colores, con informacion de fecha - hora de ejecución y linea ejecutable (opcional)",
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     url="https://github.com/Pabl0VC/lib_logscolor",

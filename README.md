@@ -17,7 +17,6 @@ from logscolor.logscl import info, error, trace, warning, infoL, errorL, traceL,
 With this, you'll be able to use the different logging levels in your code.
 
 ## Basic Usage
-Import SimpleLogs into your project:
 ```python
 from logscolor.logscl import info, warning, error, trace
 
@@ -30,7 +29,7 @@ trace("Debug message")
 If you want to include information about the line where the message was generated, use the functions with the L suffix:
 
 ```python
-from simpleLogs import infoL, warningL, errorL, traceL
+from logscolor import infoL
 
 infoL("Information with line number")
 ```
@@ -43,7 +42,7 @@ infoL("Information with line number")
 - Easy integration: Designed to be a quick and simple replacement for print().
 
 ## Supported Log Levels
-SimpleLogs supports the following log levels, each with custom colors for better visibility:
+`logscolor` supports the following log levels, each with custom colors for better visibility:
 
 | Level      | Description                              | Variants               |
 |------------|------------------------------------------|-------------------------|
@@ -64,6 +63,9 @@ SimpleLogs supports the following log levels, each with custom colors for better
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## PyPI
+https://pypi.org/project/logscolor/
 
 ## Contact
 Created by Pablo Vega Castro. If you have any questions or suggestions, feel free to contact me at pablovegac.93@gmail.com.

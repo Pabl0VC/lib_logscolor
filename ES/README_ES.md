@@ -6,7 +6,7 @@
 - Opcional: Mostrar la línea del código donde se generó el mensaje.
 
 ## Instalación
-Para instalar `logscolor`, solo ejecuta el siguiente comando:
+Para instalar `logscolor` ejecuta el siguiente comando:
 
 ```bash
 pip install logscolor
@@ -18,9 +18,8 @@ from logscolor.logscl import info, error, trace, warning, infoL, errorL, traceL,
 Con esto, podrás utilizar los diferentes niveles de logging en tu código.
 
 ## Uso Básico
-Importa logscolor en tu proyecto:
 ```python
-from logscolor.logscl import info, error, trace, warning, infoL, errorL, traceL, warningL
+from logscolor.logscl import info, error, trace, warning
 
 info("Mensaje de información")
 warning("Mensaje de advertencia")
@@ -44,7 +43,7 @@ infoL("Información con línea de código")
 
 
 ## Niveles de Log Soportados
-logscolor soporta los siguientes niveles de log, cada uno con colores personalizados para una mejor visibilidad:
+`logscolor` soporta los siguientes niveles de log, cada uno con colores personalizados para una mejor visibilidad:
 
 | Nivel      | Descripción                              | Variantes               |
 |------------|------------------------------------------|-------------------------|
@@ -56,7 +55,7 @@ logscolor soporta los siguientes niveles de log, cada uno con colores personaliz
 ### Imágenes
 ![alt text](/examples/example_terminal.png)
 
-### Real Examples
+### Ejemplos reales
 ![alt text](/examples/real_ex.png)
 
 ## Requisitos
@@ -65,6 +64,9 @@ logscolor soporta los siguientes niveles de log, cada uno con colores personaliz
 
 ## Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+## PyPI
+https://pypi.org/project/logscolor/
 
 ## Contacto
 Creado por Pablo Vega Castro. Si tienes dudas o sugerencias, no dudes en contactarme pablovegac.93@gmail.com.
