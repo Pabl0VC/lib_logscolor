@@ -1,70 +1,69 @@
 # LogsColor
+**Logscolor** is a lightweight and easy-to-use open-source library for creating logs with customizable colors in Python. Ideal for developers looking to simplify tracking and debugging in their projects.
+- Colored log messages.
+- Different log levels (`INFO`, `WARNING`, `ERROR`, `TRACE`).
+- Optional: Display the line of code where the message was generated.
 
-**Logscolor** es una biblioteca de código abierto ligera y fácil de usar para crear registros (logs) con colores personalizables en Python. Ideal para desarrolladores que buscan simplificar el seguimiento y la depuración en sus proyectos.
-- Colores en los mensajes de log.
-- Diferentes niveles de log (`INFO`, `WARNING`, `ERROR`, `TRACE`).
-- Opcional: Mostrar la línea del código donde se generó el mensaje.
-
-## Instalación
-Para instalar `logscolor`, solo ejecuta el siguiente comando:
+## Installation
+To install `logscolor`, simply run the following command:
 
 ```bash
 pip install logscolor
 ```
-Luego, en tu proyecto, importa las funciones de logging:
+Then, in your project, import the logging functions:
 ```python
 from logscolor.logscl import info, error, trace, warning, infoL, errorL, traceL, warningL
 ```
-Con esto, podrás utilizar los diferentes niveles de logging en tu código.
+With this, you'll be able to use the different logging levels in your code.
 
-## Uso Básico
-Importa logscolor en tu proyecto:
+## Basic Usage
+Import SimpleLogs into your project:
 ```python
-from logscolor.logscl import info, error, trace, warning, infoL, errorL, traceL, warningL
+from logscolor.logscl import info, warning, error, trace
 
-info("Mensaje de información")
-warning("Mensaje de advertencia")
-error("Mensaje de error")
-trace("Mensaje de depuración")
+info("Information message")
+warning("Warning message")
+error("Error message")
+trace("Debug message")
 ```
 
-Si deseas incluir información sobre la línea donde se genera el mensaje, utiliza las funciones con sufijo **L**:
-```python
-from logscolor.logscolor import infoL
+If you want to include information about the line where the message was generated, use the functions with the L suffix:
 
-infoL("Información con línea de código")
+```python
+from simpleLogs import infoL, warningL, errorL, traceL
+
+infoL("Information with line number")
 ```
 
-## Características
-- Colores personalizables: Cada nivel de log tiene un color único para facilitar la identificación visual.
-- Formato enriquecido: Muestra la fecha, hora y línea de origen opcionalmente.
-- Ligero y fácil de integrar: Ideal para proyectos grandes o pequeños.
-- Soporte para niveles avanzados: Incluye trazabilidad (trace) para depuración detallada.
-- Fácil integración: Diseñado para usarse como un reemplazo rápido y sencillo de `print()`.
+## Features
+- Customizable colors: Each log level has a unique color for easier visual identification.
+- Enriched format: Displays the date, time, and optionally the line of origin.
+- Lightweight and easy to integrate: Ideal for both large and small projects.
+- Support for advanced levels: Includes traceability (trace) for detailed debugging.
+- Easy integration: Designed to be a quick and simple replacement for print().
 
+## Supported Log Levels
+SimpleLogs supports the following log levels, each with custom colors for better visibility:
 
-## Niveles de Log Soportados
-logscolor soporta los siguientes niveles de log, cada uno con colores personalizados para una mejor visibilidad:
-
-| Nivel      | Descripción                              | Variantes               |
+| Level      | Description                              | Variants               |
 |------------|------------------------------------------|-------------------------|
-| **INFO**   | Mensajes informativos.                  | `info`, `infoL`         |
-| **WARNING**| Advertencias sobre posibles problemas.   | `warning`, `warningL`   |
-| **ERROR**  | Mensajes de error críticos.             | `error`, `errorL`       |
-| **TRACE**  | Mensajes para depuración detallada.      | `trace`, `traceL`       |
+| **INFO**   | Informational messages.                  | `info`, `infoL`         |
+| **WARNING**| Warnings about potential issues.   | `warning`, `warningL`   |
+| **ERROR**  | Critical error messages.             | `error`, `errorL`       |
+| **TRACE**  | Detailed debugging messages.      | `trace`, `traceL`       |
 
-### Imágenes
+## Images
 ![alt text](/examples/example_terminal.png)
 
 ### Real Examples
 ![alt text](/examples/real_ex.png)
 
-## Requisitos
-- Python 3.7 o superior
+## Requirements
+- Python 3.7 or higher
 - colorama
 
-## Licencia
-Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Contacto
-Creado por Pablo Vega Castro. Si tienes dudas o sugerencias, no dudes en contactarme pablovegac.93@gmail.com.
+## Contact
+Created by Pablo Vega Castro. If you have any questions or suggestions, feel free to contact me at pablovegac.93@gmail.com.

@@ -124,9 +124,11 @@ def traceL(msg):
 # Uso del logger
 if __name__ == "__main__":
     # Ejemplos de uso con diferentes niveles
-    info("Este es un mensaje de información.")
-    trace("Este es un mensaje de traza.")
-    warning("Este es un mensaje de advertencia.")
-    error("Este es un mensaje de error.")
-    infoL("Este mensaje incluye la línea de código.")
-    traceL("Este mensaje incluye la línea de código.")
+    info("1. Este es un mensaje de información.")
+    infoL("2. Este mensaje incluye la línea de código.")
+    trace("3. Este es un mensaje de traza.")
+    traceL("4. Este mensaje incluye la línea de código.")
+    warning("5. Este es un mensaje de advertencia.")
+    warningL("6. Este es un mensaje de advertencia.")
+    error("7. Este es un mensaje de error.")
+    errorL("8. Este es un mensaje de error.")
